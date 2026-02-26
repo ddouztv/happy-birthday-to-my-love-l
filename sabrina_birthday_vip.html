@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️ Sabrine</title>
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg,#1a1a1a,#000,#333,#111);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-align:center;
+    color:#FFD700;
+    overflow:hidden;
+    position:relative;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+h1{
+    font-size:6vw;
+    margin-top:5vh;
+    text-shadow:0 0 10px #FFD700,0 0 20px #FFD700;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+    from {text-shadow:0 0 10px #FFD700,0 0 20px #FFD700;}
+    to {text-shadow:0 0 30px #FFA500,0 0 60px #FFD700;}
+}
+
+button{
+    padding:2vh 5vw;
+    font-size:5vw;
+    border:none;
+    border-radius:35px;
+    background:#FFD700;
+    color:#1a1a1a;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:5vh;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #FFD700,0 0 40px #FFA500;
+}
+</style>
+</head>
+<body>
+
+<h1>عيد ميلاد سعيد ❤️ Sabrine</h1>
+<p>28 Février 🎂✨</p>
+
+<!-- الزر -->
+<button onclick="openVideo()">اضغطي هنا لمشاهدة الفيديو 💌</button>
+
+<script>
+function openVideo(){
+    // يفتح نافذة جديدة بحجم محدد للفيديو
+    window.open("TV.mp4", "_blank", "width=800,height=450,top=100,left=100,toolbar=no,scrollbars=no,resizable=yes");
+    
+    // تشغيل الموسيقى في الخلفية
+    let audio = new Audio("WIN.mp3");
+    audio.loop = true;
+    audio.play();
+
+    alert("Sabrine ❤️ هذا الفيديو لك وحدك 💖");
+}
+</script>
+
+</body>
+</html>
